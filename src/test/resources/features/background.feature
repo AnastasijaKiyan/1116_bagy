@@ -8,7 +8,7 @@
       /Then I type "Roseb1" into element with xpath "//input[@formcontrolname='password']"
       /Then I click on element with xpath "//button[@type='submit']"
 
-    @scq
+    @scq1
     Scenario: test scenario scq
       Given I open url "http://ask-stage.portnov.com"
       Then I wait for 3 sec
