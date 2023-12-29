@@ -1,16 +1,21 @@
 @background
   Feature: background
 
-    Background:
+    /Background:
+      /Given I open url "http://ask-stage.portnov.com"
+      /Then I wait for 3 sec
+      /Then I type "Teacher79@enoiv.com" into element with xpath "//input[@formcontrolname='email']"
+      /Then I type "Roseb1" into element with xpath "//input[@formcontrolname='password']"
+      /Then I click on element with xpath "//button[@type='submit']"
+
+    @scq
+    Scenario: test scenario scq
       Given I open url "http://ask-stage.portnov.com"
       Then I wait for 3 sec
       Then I type "Teacher79@enoiv.com" into element with xpath "//input[@formcontrolname='email']"
       Then I type "Roseb1" into element with xpath "//input[@formcontrolname='password']"
       Then I click on element with xpath "//button[@type='submit']"
-
-    @scq
-    Scenario: test scenario scq
-     Then I wait for element with xpath "//h5[contains(text(),'Quizzes')]" to be present
+      Then I wait for element with xpath "//h5[contains(text(),'Quizzes')]" to be present
       Then I wait for 2 sec
       Then I click on element with xpath "//h5[contains(text(),'Quizzes')]"
       Then I wait for element with xpath "//span[contains(text(),'Create New Quiz')]/.." to be present
